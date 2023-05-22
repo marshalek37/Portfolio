@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  background-image: url(/Photos/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  margin: 0px 0px 20px;
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 16px;
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 120px;
+  color: #fff;
+}
+
+/* Add this code to your styles.scss file */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 4px 30px rgb(255, 0, 0, 0.01);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background: rgba(255, 0, 0, 0.6);
+  border-radius: 16px;
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 300px;
+  margin-left: 120px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.1);
+  background: rgba(150, 150, 150, 0.649);
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.4);
+  color: #3c3c3c;
+}
+
+#success-message {
+  margin-top: 20px;
+  background-color: #e9f5eb;
+  padding: 10px;
+  display: none;
+}
+
+/* Add additional styling for different sections and elements as per your preference */
+.contact-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 60px;
+  width: 620px;
+}
+
+.form-textarea {
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+  font-size: 16px;
+}
+
+.form-email {
+  width: 500px;
+  font-size: 16px;
+}
+
+.form-name {
+  width: 500px;
+  font-size: 16px;
+}
+
+#projects {
+  /* Add desired styling for the projects section */
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+}
+
+.project-links a {
+  margin-right: 10px;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  line-height: 22px;
+  text-align: left;
+  margin: 20px 20px;
+}
+
+.some-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 16px;
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  height: 300px;
+}
+
+.text-box-1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.text-box-2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.text-box-3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  width: 232px;
+  height: 130px;
+  margin: 20px 0 20px 40px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  justify-content: space-between;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav_section {
+  transition: 0.4s;
+}
+
+.nav_section:hover {
+  transform: scale(1.1);
+}
+
+.logo-wrapper {
+  margin-right: 266px;
+}
+
+.logo-wrapper-1 {
+  margin: 66px 40px 0px 0px;
+  font-size: 32px;
+  line-height: 32px;;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+  margin: 0px 10px 10px 0px;
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  transition: 0.3s;
+  position: relative;
+}
+
+.image:hover {
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.6);
+  transform: scale(1.4);
+  z-index: 1;
+}
+
+.image-1 {
+  width: 112px;
+  height: auto;
+  margin: 0px 10px 10px 0px;
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  transition: 0.3s;
+  position: relative;
+}
+
+.image-1:hover {
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.6);
+  transform: scale(1.4);
+  z-index: 1;
+}
+
+.image-2 {
+  width: 196px;
+  height: auto;
+  margin: 0px 10px 10px 0px;
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  transition: 0.3s;
+  position: relative;
+}
+
+.image-2:hover {
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.6);
+  transform: scale(1.4);
+  z-index: 1;
+}
+
+.about-me-photos-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin-left:  10px;
+}
+
+.main-image {
+  width: 40%;
+  height: 40%;
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  margin-right: 40px;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 40px 40px 40px;
+}
+
+.about-me-text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+  width: 100%;
+  text-align: left;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  padding: 20px 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.project-card {
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  padding: 20px;
+  margin: 0 20px 20px 20px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 4px 30px rgba(255, 0, 0, 0.6);
+}
+
+.project-card h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project-card a:hover {
+  transform: scale(1.1);
+}
+
+.project-card-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
