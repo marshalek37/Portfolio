@@ -378,14 +378,14 @@ nav {
 
 .main-image {
   width: auto;
-    height: 680px;
+  height: 680px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(7.2px);
-      -webkit-backdrop-filter: blur(7.2px);
+    backdrop-filter: blur(7.2px);
+    -webkit-backdrop-filter: blur(7.2px);
     border: 1px solid rgba(0, 0, 0, 0.2);
-      margin-right: 40px;
+    margin-right: 40px;
 }
 
 .about-me-section {
