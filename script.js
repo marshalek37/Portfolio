@@ -16,14 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Toggle mobile navigation
-const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('nav ul');
-
-navToggle.addEventListener('click', function() {
-  navMenu.classList.toggle('active');
-});
-
 // Form submission
 const form = document.querySelector('#contact-form');
 const successMessage = document.querySelector('#success-message');
@@ -36,4 +28,9 @@ form.addEventListener('submit', function(e) {
 
   // Optional: Reset the form fields
   form.reset();
+});
+
+window.addEventListener('load', function() {
+  var loadingElement = document.querySelector('.loading');
+  loadingElement.style.display = 'none';
 });

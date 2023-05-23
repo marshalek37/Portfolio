@@ -508,3 +508,99 @@ h3 {
 .icon-1-wrapper {
   margin-top: 54px;
 }
+
+.revert-site {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.arrow {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url('Photos/Ikony/arrow.svg');
+  background-size: cover;
+  transform: rotate(-90deg);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  opacity: 0.7;
+}
+
+.projects {
+  height: 800px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.loading.hidden {
+  opacity: 0;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.loading-text.hidden {
+  opacity: 0;
+}
+
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #cfcfcf;
+  font-family: "Quattrocento Sans", sans-serif;
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+  animation: blur-text 1.5s 0s infinite linear alternate;
+}
+
+.loading.hidden .loading-text span {
+  filter: blur(4px); /* Apply blur when hidden */
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+
