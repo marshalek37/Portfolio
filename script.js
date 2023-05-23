@@ -34,3 +34,18 @@ window.addEventListener('load', function() {
   var loadingElement = document.querySelector('.loading');
   loadingElement.style.display = 'none';
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var arrowLink = document.querySelector('.arrow');
+
+  arrowLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    var target = document.querySelector(this.getAttribute('href'));
+
+    // Scroll smoothly to the target element
+    target.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
