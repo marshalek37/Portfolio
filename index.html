@@ -62,7 +62,7 @@
     <section id="about">
       <h2>About Me</h2>
       <div class="about-me-section">
-        <img class="main-image" src="Photos/IMG_5280.png" alt="My photo">
+        <img class="main-image" src="Photos/About me/photo-of-me.png" alt="My photo">
         <div class="text-wrapper">
           <p class="about-me-text">
             Hello there! I'm Patryk, a frontend developer who is passionate about building fun and interactive web experiences. My
@@ -117,25 +117,25 @@
         <div class="project-card">
           <h3>Bose landing page</h3>
         
-            <img class="preview" src="Photos/bose_landing.png" alt="Landing site"></img>
+            <img class="preview" src="Photos/Projects section/bose_landing.png" alt="Landing site"></img>
          
-            <a href="https://marshalek37.github.io/layout_miami/">View on GitHub</a>
+            <a href="https://marshalek37.github.io/layout_miami/" target="_blank">View on GitHub</a>
         </div>
 
         <div class="project-card">
-          <h3>React site filtering task</h3>
+          <h3>React movie adding task</h3>
        
-            <img class="preview" src="Photos/filter_task.png" alt="Task"></img>
+            <img class="preview" src="Photos/Projects section/task.png" alt="Task"></img>
       
-          <a href="https://marshalek37.github.io/react_movies-list-filter/">View on GitHub</a>
+          <a href="https://marshalek37.github.io/react_movies-list-add-form/" target="_blank">View on GitHub</a>
         </div>
 
         <div class="project-card">
           <h3>Other projects</h3>
      
-            <img class="preview" src="Photos/my-reposetories.png" alt="My repositories"></img>
+            <img class="preview" src="Photos/Projects section/my-reposetories.png" alt="My repositories"></img>
       
-          <a href="https://github.com/marshalek37?tab=repositories">View on GitHub</a>
+          <a href="https://github.com/marshalek37?tab=repositories" target="_blank">View on GitHub</a>
         </div>
       </div>
     </section>
@@ -148,29 +148,28 @@
           <p  class="text-box-2">If you have any questions, opportunities, or just want to say hello, please use the form below or reach out to me through the provided contact information.</p>
           <p  class="text-box-3">Thank you for visiting my portfolio and taking the time to view my work!</p>
         </div>
-        <form id="contact-form">
+        <form id="contact-form" class="contact-form" onsubmit="submitForm(event)">
           <div class="contact-form-wrapper">
             <label class="label" for="name">Name:</label>
-            <input class="form-name"type="text" id="name" name="name" placeholder="Your name" required>
+            <input class="form-name" type="text" id="name" name="name" placeholder="Your name" required>
           </div>
         
           <div class="contact-form-wrapper">
             <label class="label" for="email">Email:</label>
             <input class="form-email" type="email" id="email" name="email" placeholder="Your email" required>
           </div>
-
+        
           <div class="contact-form-wrapper">
             <label class="label" for="message">Message:</label>
             <textarea class="form-textarea" id="message" name="message" placeholder="Your message to me :)" required></textarea>
           </div>
-
+        
           <button type="submit">Send Message</button>
         </form>
-
-        <div id="success-message" style="display: none;">
-          <p>Your message has been sent successfully!</p>
+        
+        <div id="success-message" class="success" style="display: none;">
+          <p class="success-message">Your message has been sent thank You!</p>
         </div>
-      </div>
 
     </section>
     <div class="revert-site">

@@ -118,6 +118,7 @@ button[type="submit"] {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   transition: 0.3s;
+  margin-bottom: 40px;
 }
 
 button[type="submit"]:hover {
@@ -127,13 +128,6 @@ button[type="submit"]:hover {
     color: #000000;
 }
 
-#success-message {
-  margin-top: 20px;
-  background-color: #e9f5eb;
-  padding: 10px;
-  display: none;
-}
-
 /* Add additional styling for different sections and elements as per your preference */
 .contact-form-wrapper {
   display: flex;
@@ -141,6 +135,11 @@ button[type="submit"]:hover {
   text-align: center;
   height: 60px;
   width: 620px;
+}
+
+.contact-form {
+  margin: 20px 20px;
+  padding: 40px 0 0 0;
 }
 
 .form-textarea {
@@ -190,6 +189,7 @@ button[type="submit"]:hover {
   line-height: 22px;
   text-align: left;
   margin: 20px 20px;
+  width: 480px;
 }
 
 .some-wrapper {
@@ -204,7 +204,7 @@ button[type="submit"]:hover {
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
   border: 1px solid rgba(0, 0, 0, 0.2);
-  height: 300px;
+  height: 320px;
 }
 
 .text-box-1 {
@@ -272,7 +272,7 @@ nav {
   font-size: 40px;
 }
 .logo-wrapper {
-  margin-right: 400px;
+  margin-right: 360px;
 }
 
 .logo-wrapper-1 {
@@ -342,14 +342,21 @@ nav {
 }
 
 .about-me-photos-section {
+  /* padding: 20px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 1200px;
-  margin-left:  10px;
+  margin-left: 10px;
   animation: gallery-sliding 10s infinite linear;
+  /* background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(0, 0, 0, 0.2); */
   
   }
   
@@ -576,7 +583,7 @@ h3 {
   display: inline-block;
   margin: 0 5px;
   color: #cfcfcf;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   filter: blur(0px);
   -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
   animation: blur-text 1.5s 0s infinite linear alternate;
@@ -604,3 +611,26 @@ h3 {
   }
 }
 
+.success-message {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  color: #85f878;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  height: 200px;
+  line-height: 85px;
+}
+
+.success {
+  display: none;
+  margin: 10px;
+  padding-right: 20px;
+  width: 498px;
+}

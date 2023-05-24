@@ -17,18 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Form submission
-const form = document.querySelector('#contact-form');
-const successMessage = document.querySelector('#success-message');
+function submitForm(event) {
+  event.preventDefault(); // Prevent form submission
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  // Simulate form submission success by showing the success message
-  successMessage.style.display = 'block';
-
-  // Optional: Reset the form fields
-  form.reset();
-});
+  // Make the form disappear
+  document.getElementById("contact-form").style.display = "none";
+  // Display the success message
+  document.getElementById("success-message").style.display = "block";
+}
 
 window.addEventListener('load', function() {
   var loadingElement = document.querySelector('.loading');
