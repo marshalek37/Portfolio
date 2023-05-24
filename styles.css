@@ -283,7 +283,7 @@ nav {
 
 .image {
   width: 300px;
-  height: auto;
+  height: 147px;
   margin: 0px 10px 10px 0px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -293,6 +293,8 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   position: relative;
+  object-fit: cover;
+  object-position: center;
 }
 
 .image:hover {
@@ -303,7 +305,7 @@ nav {
 
 .image-1 {
   width: 112px;
-  height: auto;
+  height: 147px;
   margin: 0px 10px 10px 0px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -313,6 +315,8 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   position: relative;
+  object-fit: cover;
+  object-position: center;
 }
 
 .image-1:hover {
@@ -333,6 +337,8 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   position: relative;
+  object-fit: cover;
+  object-position: center;
 }
 
 .image-2:hover {
