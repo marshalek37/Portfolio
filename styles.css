@@ -148,15 +148,28 @@ button[type="submit"]:hover {
   font-size: 16px;
 }
 
+.form-textarea:focus-visible {
+  outline: 2px rgba(255, 0, 0, 0.6);
+ }
+
 .form-email {
   width: 500px;
   font-size: 16px;
 }
 
+.form-email:focus-visible {
+  outline: 2px rgba(255, 0, 0, 0.6);
+ }
+
 .form-name {
   width: 500px;
   font-size: 16px;
 }
+
+.form-name:focus-visible {
+ outline: 2px rgba(255, 0, 0, 0.6);
+}
+
 
 #projects {
   /* Add desired styling for the projects section */
@@ -391,7 +404,7 @@ nav {
 .main-image {
   width: auto;
   height: 680px;
-    background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(7.2px);
@@ -450,21 +463,15 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+
+.project-card:hover .preview {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 .project-card h3 {
   color: #cfcfcf;
   font-size: 20px;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.project-card a:hover {
-  transform: scale(1.1);
 }
 
 .project-card-container {
@@ -482,6 +489,7 @@ p {
   width: 330px;
   margin-bottom: 20px;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
 h3 {
