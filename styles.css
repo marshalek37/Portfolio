@@ -633,10 +633,10 @@ h3 {
   height: 200px;
   line-height: 85px;
 }
-
 .success {
+  padding-top: 20px;
   display: none;
   margin: 10px;
-  padding-right: 20px;
+  padding-right: 40px;
   width: 498px;
 }
