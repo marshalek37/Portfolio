@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 21, 0.99), rgba(0, 0, 39, 0.99));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,12 +16,16 @@ body {
 
 header {
   margin: 0px 0px 20px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(40, 40, 40, 0.2);
+  /* background: url(Photos/PjsR-1.gif); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 16px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(40, 40, 40, 0.1);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(40, 40, 40, 0.1);
 }
 
 ul {
@@ -91,22 +95,22 @@ input[type="email"],
 textarea {
   padding: 10px;
   border-radius: 8px;
-  color: #fff;
+  color: #cfcfcf;
   background: rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.01);
+    box-shadow: 0px 2px 4px rgba(130, 130, 130, 0.01);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(130, 130, 130, 0.6);
 }
 
 button[type="submit"] {
   padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.322);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 16px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(40, 40, 40, 0.1);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(40, 40, 40, 0.6);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -125,7 +129,7 @@ button[type="submit"]:hover {
   transform: scale(1.1);
   background: rgba(255, 0, 0, 0.6);
     box-shadow: 0px 2px 4px rgba(255, 0, 0, 0.4);
-    color: #000000;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /* Add additional styling for different sections and elements as per your preference */
@@ -179,7 +183,7 @@ button[type="submit"]:hover {
   background-color: #fff;
   border-radius: 4px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(40, 40, 40, 0.2);
   margin-bottom: 20px;
 }
 
@@ -211,12 +215,12 @@ button[type="submit"]:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(130, 130, 130, 0.2);
   border-radius: 16px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(130, 130, 130, 0.2);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(130, 130, 130, 0.2);
   height: 320px;
 }
 
@@ -283,6 +287,7 @@ nav {
 .nav-text {
   font-weight: bold;
   font-size: 40px;
+  color: #cfcfcf;
 }
 .logo-wrapper {
   margin-right: 360px;
@@ -298,12 +303,12 @@ nav {
   width: 300px;
   height: 147px;
   margin: 0px 10px 10px 0px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(40, 40, 40, 0.2);
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(40, 40, 40, 0.2);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(40, 40, 40, 0.2);
   transition: 0.3s;
   position: relative;
   object-fit: cover;
@@ -311,7 +316,7 @@ nav {
 }
 
 .image:hover {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 4px rgba(40, 40, 40, 0.4);
   transform: scale(1.4);
   z-index: 1;
 }
@@ -320,12 +325,12 @@ nav {
   width: 112px;
   height: 147px;
   margin: 0px 10px 10px 0px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(40, 40, 40, 0.2);
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(40, 40, 40, 0.2);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(40, 40, 40, 0.2);
   transition: 0.3s;
   position: relative;
   object-fit: cover;
@@ -333,7 +338,7 @@ nav {
 }
 
 .image-1:hover {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 4px rgba(40, 40, 40, 0.4);
   transform: scale(1.4);
   z-index: 1;
 }
@@ -342,12 +347,12 @@ nav {
   width: 196px;
   height: auto;
   margin: 0px 10px 10px 0px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(40, 40, 40, 0.2);
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(40, 40, 40, 0.2);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(40, 40, 40, 0.2);
   transition: 0.3s;
   position: relative;
   object-fit: cover;
@@ -404,12 +409,15 @@ nav {
 .main-image {
   width: auto;
   height: 680px;
-  background: rgba(0, 0, 0, 0.2);
+  /* background: rgba(0, 0, 0, 0.2); */
+  background: url(Photos/PjsR-1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
     border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(40, 40, 40, 0.2);
     backdrop-filter: blur(7.2px);
     -webkit-backdrop-filter: blur(7.2px);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(40, 40, 40, 0.2);
     margin-right: 40px;
 }
 
@@ -432,12 +440,12 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(40, 40, 40, 0.4);
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(40, 40, 40, 0.2);
   padding: 20px 20px;
   height: 680px;
 }
@@ -447,12 +455,12 @@ p {
 }
 
 .project-card {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 254, 254, 0.1);
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   padding: 20px;
   margin: 0 20px 20px 20px;
   transition: 0.3s;
@@ -500,25 +508,23 @@ h3 {
   height: 40px;
   width: auto;
   transition: 0.4s;
-  filter: invert(0.65);
+  filter: invert(0.9);
 }
 
 .icon:hover {
   transform: scale(1.2);
-  filter: invert(0);
 }
 
 .icon-1 {
   height: 40px;
   width: auto;
   transition: 0.4s;
-  filter: invert(0.6);
+  filter: invert(0.8);
   margin-left: 20px;
 }
 
 .icon-1:hover {
   transform: scale(1.2);
-  filter: none;
 }
 
 .icon-wrapper {
@@ -545,11 +551,13 @@ h3 {
   background-image: url('Photos/Ikony/arrow.svg');
   background-size: cover;
   transform: rotate(-90deg);
-  transition: opacity 0.3s ease-in-out;
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
 
 .arrow:hover {
-  opacity: 0.7;
+  opacity: 1;
+  transform: scale(1.2) rotate(-90deg);
 }
 
 .projects {
@@ -632,13 +640,13 @@ h3 {
   -webkit-backdrop-filter: blur(7.2px);
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 8px;
-  color: #85f878;
+  color: #cfcfcf;
   padding: 10px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  height: 200px;
+  height: 100px;
   line-height: 85px;
 }
 .success {
@@ -647,4 +655,8 @@ h3 {
   margin: 10px;
   padding-right: 40px;
   width: 498px;
+}
+
+.contact-section {
+  height: 600px;
 }
