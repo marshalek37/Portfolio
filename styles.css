@@ -564,6 +564,7 @@ h3 {
   transform: rotate(-90deg);
   opacity: 0.5;
   transition: opacity 0.3s;
+  filter: invert(0.9);
 }
 
 .arrow:hover {
