@@ -1,20 +1,30 @@
-// Smooth scrolling for navigation links
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
 document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('nav a');
+  var navLinks = document.querySelectorAll('.nav-text');
+
   navLinks.forEach(function(link) {
     link.addEventListener('click', function(e) {
       e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      const offsetTop = targetElement.offsetTop;
-
-      window.scrollTo({
-        top: offsetTop,
+      var target = document.querySelector(link.getAttribute('href'));
+      target.scrollIntoView({
         behavior: 'smooth'
       });
     });
   });
 });
+
 
 // Form submission
 function submitForm(event) {
@@ -44,4 +54,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+window.addEventListener('scroll', function() {
+  var revertSite = document.querySelector('.revert-site');
+  var arrow = document.querySelector('.arrow');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > 600) {
+    revertSite.classList.add('visible');
+  } else {
+    revertSite.classList.remove('visible');
+  }
+});
+
 

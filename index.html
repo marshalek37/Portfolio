@@ -9,6 +9,8 @@
 </head>
 
 <body>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  
   <div class="loading">
     <div class="loading-text">
       <span class="loading-text-words">L</span>
@@ -25,7 +27,9 @@
     <nav>
       <ul>
         <li class="logo-wrapper">
-          <img class="logo" src="Photos/Marszalek.png" alt="Logo">
+          <a href="https://www.linkedin.com/in/marshalek37" target="_blank">
+            <img class="logo" src="Photos/Marszalek.png" alt="Logo">
+          </a>
         </li>
         <li class="logo-wrapper-1">
           <div class="nav_section">
@@ -44,17 +48,18 @@
             <a class="nav-text" href="#contact">Contact</a>
         </div>
         </li>
-<li class="icon-wrapper">
-  <a href="https://github.com/marshalek37" target="_blank">
-    <img class="icon" src="Photos/Ikony/github.svg" alt="Git Hub link">
-  </a>
-</li>
 
-<li class="icon-1-wrapper">
-  <a href="https://www.linkedin.com/in/marshalek37" target="_blank">
-    <img class="icon-1" src="Photos/Ikony/linkedin.svg" alt="Linked in link">
-  </a>
-</li>
+        <li class="icon-wrapper">
+          <a href="https://github.com/marshalek37" target="_blank">
+            <img class="icon" src="Photos/Ikony/github.svg" alt="Git Hub link">
+          </a>
+        </li>
+
+        <li class="icon-1-wrapper">
+          <a href="https://www.linkedin.com/in/marshalek37" target="_blank">
+            <img class="icon-1" src="Photos/Ikony/linkedin.svg" alt="Linked in link">
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -115,21 +120,21 @@
       <h2 id="projects">Projects</h2>
       <div class="project-card-container">
         <div class="project-card">
-          <h3>Bose landing page</h3>
+          <h3 class="project-title">Bose landing page</h3>
           <a href="https://marshalek37.github.io/layout_miami/" target="_blank">
             <img class="preview" src="Photos/Projects section/bose_landing.png" alt="Landing site"></img>
           </a>
         </div>
 
         <div class="project-card">
-          <h3>React movie adding task</h3>
-          <a href="https://marshalek37.github.io/react_movies-list-add-form/" target="_blank">
+          <h3 class="project-title">Todo app</h3>
+          <a href="https://marshalek37.github.io/react_todo-app-with-api/" target="_blank">
             <img class="preview" src="Photos/Projects section/task.png" alt="Task"></img>
           </a>
         </div>
 
         <div class="project-card">
-          <h3>Other projects</h3>
+          <h3 class="project-title">Other projects</h3>
           <a href="https://github.com/marshalek37?tab=repositories" target="_blank">
             <img class="preview" src="Photos/Projects section/my-reposetories.png" alt="My repositories"></img>
           </a>
@@ -142,8 +147,12 @@
       <div class="some-wrapper">
         <div class="text-section">
           <p class="text-box-1">Feel free to get in touch with me. I'd love to hear from you!</p>
-          <p  class="text-box-2">If you have any questions, opportunities, or just want to say hello, please use the form below or reach out to me through the provided contact information.</p>
-          <p  class="text-box-3">Thank you for visiting my portfolio and taking the time to view my work!</p>
+          <p  class="text-box-2">You can contact me directly or through the form on the right side.</p>
+          <p class="text-box-4">
+            <a class="textbox__content" href="tel:+48668167241">My phone: +48668167241</a>
+            <br>
+            <a class="textbox__content" href="mailto:patrykmarp@gmail.com">My e-mail: patrykmarp@gmail.com</a>
+          </p>
         </div>
         <form id="contact-form" class="contact-form" onsubmit="submitForm(event)">
           <div class="contact-form-wrapper">
