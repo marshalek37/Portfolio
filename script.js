@@ -25,14 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-// Form submission
 function submitForm(event) {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault();
 
-  // Make the form disappear
   document.getElementById("contact-form").style.display = "none";
-  // Display the success message
+
   document.getElementById("success-message").style.display = "block";
 }
 
@@ -48,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault();
     var target = document.querySelector(this.getAttribute('href'));
 
-    // Scroll smoothly to the target element
     target.scrollIntoView({
       behavior: 'smooth'
     });
@@ -66,5 +62,19 @@ window.addEventListener('scroll', function() {
     revertSite.classList.remove('visible');
   }
 });
+
+var body = document.body;
+
+function disableScroll() {
+  body.style.overflow = 'hidden';
+}
+
+function enableScroll() {
+  body.style.overflow = '';
+}
+
+body.classList.add('loading-active');
+
+disableScroll();
 
 
