@@ -1259,15 +1259,3 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
    pointer-events: none;
 }
-
-@media (min-width: 744px) and (max-width: 1260px) {
-  html.lenis {
-    height: 0;
-  }
-}
-
-@media (min-width: 200px) and (max-width: 743px) {
-  html.lenis {
-    height: 0;
-  }
-}
