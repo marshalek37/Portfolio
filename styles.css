@@ -70,10 +70,23 @@ section {
   align-items: center;
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  section {
+    margin-bottom: 20px;
+  }
+}
+
 h2 {
   font-size: 24px;
   margin-bottom: 120px;
   color: #cfcfcf;
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  h2 {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
 }
 
 #contact {
@@ -154,12 +167,25 @@ button[type="submit"]:hover {
     color: rgba(0, 0, 0, 0.8);
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  button[type="submit"] {
+    width: 200px;
+    margin-left: 100px;
+  }
+}
+
 .contact-form-wrapper {
   display: flex;
   justify-content: space-between;
   text-align: center;
   height: 60px;
   width: 620px;
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  .contact-form-wrapper {
+    width: 400px;
+  }
 }
 
 .contact-form {
@@ -171,6 +197,12 @@ button[type="submit"]:hover {
   font-family: 'Roboto', sans-serif;
   width: 500px;
   font-size: 16px;
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  .form-textarea {
+    width: 300px;
+  }
 }
 
 .form-textarea:focus-visible {
@@ -186,9 +218,21 @@ button[type="submit"]:hover {
   outline: 2px rgba(255, 0, 0, 0.6);
  }
 
+ @media (min-width: 744px) and (max-width: 1260px) {
+  .form-email {
+    width: 300px;
+  }
+}
+
 .form-name {
   width: 500px;
   font-size: 16px;
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  .form-name {
+    width: 300px;
+  }
 }
 
 .form-name:focus-visible {
@@ -225,6 +269,12 @@ button[type="submit"]:hover {
   width: 480px;
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  .text-section {
+    width: 182px;
+  }
+}
+
 .some-wrapper {
   display: flex;
   flex-direction: row;
@@ -240,11 +290,25 @@ button[type="submit"]:hover {
   height: 320px;
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  .some-wrapper {
+    width: 700px;
+  }
+}
+
 .text-box-1 {
   color: #cfcfcf;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  .text-box-1 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .text-box-2 {
@@ -254,18 +318,26 @@ button[type="submit"]:hover {
   line-height: 28px;
 }
 
-.text-box-3 {
+@media (min-width: 744px) and (max-width: 1260px) {
+  .text-box-2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+.text-box-4 {
   color: #cfcfcf;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
 
-.text-box-4 {
-  color: #cfcfcf;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+@media (min-width: 744px) and (max-width: 1260px) {
+  .text-box-4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .label {
@@ -278,6 +350,12 @@ button[type="submit"]:hover {
   font-size: 20px;
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  .label {
+    font-size: 16px;
+  }
+}
+
 .logo {
   display: flex;
   width: 232px;
@@ -285,6 +363,13 @@ button[type="submit"]:hover {
   margin: 10px 0 20px 0px;
   transition: 0.4s;
   filter:saturate(0) invert(0.8);
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  .label {
+    width: 116px;
+    height: 65px;
+  }
 }
 
 .logo:hover {
@@ -318,12 +403,24 @@ nav {
   transition: 0.4s;
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  .nav-text {
+    font-size: 24px;
+  }
+}
+
 .nav-text:hover {
   color: #080173cc;
 }
 
 .logo-wrapper {
   margin-right: 360px;
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  .logo-wrapper {
+    margin-right: 20px
+  }
 }
 
 .logo-wrapper-1 {
@@ -417,10 +514,28 @@ nav {
   width: 1200px;
   margin-left: 10px;
 
-  @media (min-width: 1290px) {
-    animation: gallery-sliding 10s infinite linear;
+    @media (min-width: 1290px) {
+      animation: gallery-sliding 10s infinite linear;
+    }
   }
-  
+
+  @media (min-width: 744px) and (max-width: 1260px) {
+    .about-me-photos-section {
+      padding: 30px 10px 22px 20px;
+      width: 700px;
+      flex-direction: row;
+      justify-content: space-around;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(40, 40, 40, 0.2);
+      backdrop-filter: blur(7.2px);
+      -webkit-backdrop-filter: blur(7.2px);
+      border: 1px solid rgba(40, 40, 40, 0.2);
+      position: relative;
+      object-fit: cover;
+      object-position: center;
+      transition: 0.4s;
+    }
   }
   
   
@@ -454,6 +569,13 @@ nav {
   transition: 0.4s;
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  .main-image {
+    height: 400px;
+    margin: 60px 20px 0 20px;
+  }
+}
+
 .main-image:hover {
   transform: scale(1.1) translateY(-24px);
 }
@@ -465,12 +587,27 @@ nav {
   margin: 0 40px 40px 40px;
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  .about-me-section {
+    margin: 0 20px 20px 20px;
+    justify-content: center;
+  }
+}
+
 .about-me-text {
   color: #cfcfcf;
   font-size: 16px;
   line-height: 26px;
   width: 100%;
   text-align: left;
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  .about-me-text {
+    font-size: 10px;
+    line-height: 16px;
+    height: auto;
+  }
 }
 
 .text-wrapper {
@@ -487,8 +624,21 @@ nav {
   height: 680px;
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  .text-wrapper {
+    height: 500px;
+    width: 324px;
+  }
+}
+
 p {
   margin-bottom: 20px;
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  p {
+    margin-bottom: 0px;
+  }
 }
 
 .project-card {
@@ -520,7 +670,7 @@ p {
   font-size: 20px;
 }
 
-@media (max-width: 744px) {
+@media (min-width: 744px) and (max-width: 1260px) {
   .project-card h3 {
     font-size: 16px;
   }
@@ -534,9 +684,10 @@ p {
   margin-right: 40px;
 }
 
-@media (max-width: 744px) {
+@media (min-width: 744px) and (max-width: 1260px) {
   .project-card-container {
     width: 700px;
+    margin-right: 20px;
   }
 }
 
@@ -551,7 +702,7 @@ p {
   opacity: 0.8;
 }
 
-@media (max-width: 744px) {
+@media (min-width: 744px) and (max-width: 1260px) {
   .preview {
     width: 160px
   }
@@ -596,6 +747,12 @@ h3 {
   margin-left: 40px;
 }
 
+@media (min-width: 744px) and (max-width: 1260px) {
+  .icon-wrapper{
+    margin-left: 20px;
+  }
+}
+
 .icon-1-wrapper {
   margin-top: 54px;
 }
@@ -637,6 +794,14 @@ h3 {
 
 .projects {
   height: 800px;
+  justify-content: end;
+    align-items: center;
+}
+
+@media (min-width: 744px) and (max-width: 1260px) {
+  .projects {
+    height: 400px;
+  }
 }
 
 @import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
