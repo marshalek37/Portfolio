@@ -299,9 +299,11 @@ button[type="submit"]:hover {
   .form-name {
     width: 130px;
     margin-right: 20px;
+    text-align: center;
     font-size: 10px;
     height: 30px;
     margin-top: 16px;
+
   }
 }
 
