@@ -287,7 +287,6 @@ button[type="submit"]:hover {
 .form-name {
   width: 500px;
   font-size: 16px;
-  text-align: center;
 }
 
 @media (min-width: 744px) and (max-width: 1260px) {
@@ -303,6 +302,7 @@ button[type="submit"]:hover {
     font-size: 10px;
     height: 30px;
     margin-top: 16px;
+    text-align: center;
   }
 }
 
