@@ -867,12 +867,6 @@ p {
   transition: 0.4s;
 }
 
-@media (min-width: 200px) and (max-width: 743px) {
-  .project-card {
-    margin: 0px 0px 20px 40px;
-  }
-}
-
 .project-card:hover {
   transform: scale(1.2);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
@@ -905,7 +899,8 @@ p {
 .project-card-container {
   width: 1200px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap ;
+  justify-content: center;
   align-items: center;
   margin-right: 40px;
 }
@@ -1097,7 +1092,7 @@ h3 {
 
 @media (min-width: 200px) and (max-width: 743px) {
   .projects {
-    margin-top: 340px;
+    margin-top: 500px;
     height: 400px;
     justify-content: center;
   }
@@ -1203,7 +1198,7 @@ h3 {
 
 @media (min-width: 200px) and (max-width: 743px) {
   .contact-section {
-    margin: 200px 0 0 0;
+    margin: 400px 0 0 0;
     justify-content: center;
   }
 }
