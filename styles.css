@@ -365,7 +365,6 @@ button[type="submit"]:hover {
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
   border: 1px solid rgba(0, 0, 0, 0.2);
-  height: 320px;
 }
 
 @media (min-width: 744px) and (max-width: 1260px) {
