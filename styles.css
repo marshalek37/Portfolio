@@ -808,6 +808,7 @@ nav {
   flex-direction: row;
   width: 100%;
   margin: 0 40px 40px 40px;
+  overflow-y: auto;
 }
 
 @media (min-width: 744px) and (max-width: 1260px) {
