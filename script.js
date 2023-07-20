@@ -50,18 +50,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-//lenis
-
-var body = document.body;
-
-function disableScroll() {
-  body.style.overflow = 'hidden';
-}
-
-function enableScroll() {
-  body.style.overflow = '';
-}
-
 body.classList.add('loading-active');
 
 disableScroll();
