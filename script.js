@@ -1,16 +1,3 @@
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
 document.addEventListener('DOMContentLoaded', function() {
   var navLinks = document.querySelectorAll('.nav-text');
 
@@ -62,22 +49,6 @@ window.addEventListener('scroll', function() {
     revertSite.classList.remove('visible');
   }
 });
-
-//lenis
-
-var body = document.body;
-
-function disableScroll() {
-  body.style.overflow = 'hidden';
-}
-
-function enableScroll() {
-  body.style.overflow = '';
-}
-
-body.classList.add('loading-active');
-
-disableScroll();
 
 //header
 const header = document.querySelector('header');
@@ -184,14 +155,3 @@ window.addEventListener('scroll', function() {
     arrow.classList.remove('no-filter');
   }
 });
-
-
-
-
-
-
-
-
-
-
-
